@@ -19,3 +19,6 @@ testArr <- top10$combinedDest
 
 q5 <- filter(df, combinedDest %in% testArr)
 q5 <- q5[,-5]
+
+globejs(lat = q5$dest_lat, long = q5$dest_long, arcs = q5)
+
